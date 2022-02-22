@@ -50,4 +50,5 @@ There is quite a bit you can do with these functions, so here are some additiona
 - [Build Netlify Functions with TypeScript](https://docs.netlify.com/functions/build-with-typescript/)
 - [Event-triggered Functions](https://docs.netlify.com/functions/trigger-on-events/)
 - [What are Background Functions](https://www.netlify.com/blog/2021/01/07/what-are-background-functions/)
+- [Netlify Functions - Examples](https://functions.netlify.com/examples/)
 - [Using esbuild as your bundler for new ECMAScript Features](https://www.netlify.com/blog/2021/04/02/modern-faster-netlify-functions/)
