@@ -40,8 +40,7 @@ With Netlify, you can build out server-side code without having to setup and mai
 
 The function format expects a function named `handler` to be exported. This will be the function that will be invoked whenever a client makes a request to the generated endpoints. The endpoint's format is followed as `/.netlify/functions/joke`. So whenever the site is deployed, if you go to `https://<site base url>/.netlify/functions/joke` you will see a random joke!
 
-There is quite a bit you can do with these functions, so here are some additional resources to
-learn more!
+There is quite a bit you can do with these functions, so here are some additional resources to learn more!
 
 ### Functions Resources
 
