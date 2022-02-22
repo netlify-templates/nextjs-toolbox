@@ -44,7 +44,8 @@ There is quite a bit you can do with these functions, so here are some additiona
 
 ### Functions Resources
 
-- [Netlify Function Format](https://docs.netlify.com/functions/build-with-javascript/)
+- [Netlify Function Format](https://docs.netlify.com/functions/build-with-javascript/#synchronous-function-format)
+- [Build Netlify Functions with TypeScript](https://docs.netlify.com/functions/build-with-typescript/)
 - [Event-triggered Functions](https://docs.netlify.com/functions/trigger-on-events/)
 - [What are Background Functions](https://www.netlify.com/blog/2021/01/07/what-are-background-functions/)
 - [Using ESbuild as your bundler for new ECMAScript Features](https://www.netlify.com/blog/2021/04/02/modern-faster-netlify-functions/)
