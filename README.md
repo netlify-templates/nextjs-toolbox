@@ -12,7 +12,7 @@ This project is a very minimal starter that includes 2 sample components, a glob
 
 ## Getting Started
 
-First, run the development server:
+After installing the dependencies with `npm install` or `yarn install`, run the development server:
 
 ```bash
 npm run dev
