@@ -40,12 +40,14 @@ With Netlify, you can build out server-side code without having to setup and mai
 
 The function format expects a function named `handler` to be exported. This will be the function that will be invoked whenever a client makes a request to the generated endpoints. The endpoint's format is followed as `/.netlify/functions/joke`. So whenever the site is deployed, if you go to `https://<site base url>/.netlify/functions/joke` you will see a random joke!
 
-There is quite a bit you can do with these functions, so here are some additional resources to learn more!
+> Side note: In our example, we're using `import` to include data from another location and `export const const handler` to let our function be consumed by Netlify. We're able to do this because of [esbuild](https://esbuild.github.io). This is a bundler configuration we set in our `netlify.toml` under `[functions]`.
 
 ### Functions Resources
+
+There is quite a bit you can do with these functions, so here are some additional resources to learn more!
 
 - [Netlify Function Format](https://docs.netlify.com/functions/build-with-javascript/#synchronous-function-format)
 - [Build Netlify Functions with TypeScript](https://docs.netlify.com/functions/build-with-typescript/)
 - [Event-triggered Functions](https://docs.netlify.com/functions/trigger-on-events/)
 - [What are Background Functions](https://www.netlify.com/blog/2021/01/07/what-are-background-functions/)
-- [Using ESbuild as your bundler for new ECMAScript Features](https://www.netlify.com/blog/2021/04/02/modern-faster-netlify-functions/)
+- [Using esbuild as your bundler for new ECMAScript Features](https://www.netlify.com/blog/2021/04/02/modern-faster-netlify-functions/)
