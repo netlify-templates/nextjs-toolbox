@@ -1,20 +1,22 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import ContactForm from '@components/ContactForm'
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Next.js Starter!</title>
+        <title>Next.js Toolbox</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
+        <Header title="Next.js Toolbox" />
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          Here's an example of a Netlify Form! When you fill this out, the submissions can be found in the Netlify Admin site.
         </p>
+        <ContactForm />
       </main>
 
       <Footer />

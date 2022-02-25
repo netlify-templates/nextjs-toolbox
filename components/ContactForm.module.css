@@ -1,0 +1,32 @@
+.form {
+  margin: 40px 40px;
+  min-width: 300px;
+  width: 45%;
+}
+
+.form-field {
+  font-size: inherit;
+  margin: 15px 0;
+  padding: 12px 20px;
+  width: 100%;
+}
+
+.button {
+  background-color: teal;
+  border: 1px solid black;
+  color: white;
+  width: 50%;
+  font-size: inherit;
+  margin: 15px 0;
+  padding: 12px 20px;
+  width: 100%;
+}
+.hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
