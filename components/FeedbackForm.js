@@ -4,8 +4,8 @@ export default function FeedbackForm() {
   return (
       <form
         className={styles.form}
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
+        netlify
+        netlify-honeypot="bot-field"
         name="feedback"
         method="POST"
         action="/success"
