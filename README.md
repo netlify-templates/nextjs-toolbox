@@ -38,7 +38,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 Netlify Forms are a way to wire up your native HTML into being able to seamlessly handle submissions. To get a form working, we need to add two extra things:
 
-1. An extra attribute on the `form` tag, `netlify`
+1. An extra attribute on the `form` tag, `data-netlify="true"`
 
 Adding this attribute to our `form` tag will let Netlify know when it loads the page, that it needs to be aware of submissions made through it.
 
@@ -52,7 +52,7 @@ With both of those we're ready for folks to give us feedback!
 
 While Netlify provides a default submission page for folks, we can customize it as well! With the `action` attribute on the `form` tag we will be able to direct our users to our own page.
 
-In [`components/FeedbackForm.js`](./components/FeedbackForm.js) you'll see the form has the attribute `action="/thanks"` this will take our user to the custom route `/thanks` which we created under [`pages/thanks.js`](./pages/thanks.js). As long as the page exists, you can direct folks to it!
+In [`components/FeedbackForm.js`](./components/FeedbackForm.js) you'll see the form has the attribute `action="/success"` this will take our user to the custom route `/success` which we created under [`pages/success.js`](./pages/success.js). As long as the page exists, you can direct folks to it!
 
 ### Blocking bot spam with a honeypot field
 
@@ -69,10 +69,10 @@ Many bots scan through webpages and try to see what pages and forms they can get
 Since screenreader users will still have this announced, it is important for us to
 communicate that this is a field not meant to be filled in.
 
-For this to work we also need to add a `netlify-honeypot` attribute to the form element.
+For this to work we also need to add a `data-netlify-honeypot` attribute to the form element.
 
 ```html
-<form netlify netlify-honeypot action="/feedback" method="post"></form>
+<form data-netlify="true" data-netlify-honeypot="bot-field" action="/success" method="POST"></form>
 ```
 
 [See it here in the template code.](https://github.com/netlify-templates/next-toolbox/blob/main/components/FeedbackForm.js#L8)
