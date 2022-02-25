@@ -1,6 +1,6 @@
-import styles from './ContactForm.module.css'
+import styles from './FeedbackForm.module.css'
 
-export default function ContactForm() {
+export default function FeedbackForm() {
   return (
       <form
         className={styles.form}
