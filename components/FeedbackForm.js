@@ -4,14 +4,12 @@ export default function FeedbackForm() {
   return (
       <form
         className={styles.form}
-        netlify
-        netlify-honeypot
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
         name="feedback"
         method="POST"
         action="/success"
       >
-        <input type="hidden" name="form-name" value="feedback" />
-
         <p className={styles.hidden}>
             <label>
             Don’t fill this out if you’re human: <input name="bot-field" />
