@@ -52,6 +52,7 @@ There is quite a bit you can do with these functions, so here are some additiona
 - [What are Background Functions](https://www.netlify.com/blog/2021/01/07/what-are-background-functions/)
 - [Netlify Functions - Examples](https://functions.netlify.com/examples/)
 - [Using esbuild as your bundler for new ECMAScript Features](https://www.netlify.com/blog/2021/04/02/modern-faster-netlify-functions/)
+
 ## Redirects
 
 In the [`netlify.toml`](./netlify.toml) configuration file there is an example of how to implement redirects. Redirects can be used to do many things from redirecting Single Page Apps more predictably, redirecting based on country/language to leveraging On-Demand Builders for [Distributed Persistant Rendering](https://www.netlify.com/blog/2021/04/14/distributed-persistent-rendering-a-new-jamstack-approach-for-faster-builds/). 
