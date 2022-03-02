@@ -1,6 +1,6 @@
 # Next.js Toolbox Template
 
-![netlify + next.js logo](https://res.cloudinary.com/dzkoxrsdj/image/upload/v1645847186/netlify-nextjs_m0lmbz.jpg)
+![next-on-netlify](https://user-images.githubusercontent.com/3611928/156433088-21a7cdf6-760c-4758-a3b7-9073bac5e452.png)
 
 This is a [Next.js](https://nextjs.org/) v12 project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). It is a reference on how to integrate commonly used features within Netlify for Next.js. 
 
