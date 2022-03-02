@@ -18,7 +18,7 @@ export default function FeedbackForm() {
         </p>
   
         <label htmlFor="name" id="name">Name</label>
-        <input className={styles['form-field']} type="text" name="name" />
+        <input id="name" className={styles['form-field']} type="text" name="name" />
 
         <label htmlFor="email" id="email">Email</label>
         <input className={styles['form-field']} type="email" name="email" required />
