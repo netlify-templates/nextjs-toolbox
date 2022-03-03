@@ -152,6 +152,7 @@ The bare minimum needed is the `from` and `to`, letting the [CDN](https://www.ne
 
 There are many ways to use redirects. Check out the resouces below to learn more.
 
+
 ### Redirect Resources
 
 - [Redirect syntax and configuration](https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file)
@@ -161,5 +162,12 @@ There are many ways to use redirects. Check out the resouces below to learn more
 - [On-Demand Builders](https://docs.netlify.com/configure-builds/on-demand-builders/)
 
 
+
 ## Next.js Toolbox Template - Walkthrough
-- [Video Link] (https://www.youtube.com/watch?v=wI-2XBMYybw)
+
+https://user-images.githubusercontent.com/76533034/156541634-4dd7ce20-c413-43c1-ac7d-1494dad00338.mp4
+
+
+
+
+
