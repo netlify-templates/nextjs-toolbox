@@ -159,3 +159,7 @@ There are many ways to use redirects. Check out the resouces below to learn more
 - [Creating better, more predicatable redirect rules for SPAs](https://www.netlify.com/blog/2020/04/07/creating-better-more-predictable-redirect-rules-for-spas/)
 - [Redirect by country or language](https://docs.netlify.com/routing/redirects/redirect-options/#redirect-by-country-or-language)
 - [On-Demand Builders](https://docs.netlify.com/configure-builds/on-demand-builders/)
+
+## Next.js Toolbox Template - Walkthrough
+
+https://user-images.githubusercontent.com/76533034/156541634-4dd7ce20-c413-43c1-ac7d-1494dad00338.mp4
