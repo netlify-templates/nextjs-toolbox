@@ -8,6 +8,15 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
+[[plugins]]
+  package = "netlify-plugin-cypress"
+
+  [plugins.inputs.postBuild]
+    enable = true
+
+  [plugins.inputs]
+    enable = false
+
 ## Learn more about redirects here
 ## https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
 ## https://docs.netlify.com/routing/redirects/redirect-options/
