@@ -4,6 +4,26 @@
 
 This is a [Next.js](https://nextjs.org/) v12 project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). It is a reference on how to integrate commonly used features within Netlify for Next.js. 
 
+## Table of Contents:
+
+- [Getting Started](#getting-started)
+- [Deploy to Netlify](#deploy-to-netlify)
+  - [Deploy using the Netlify CLI](#deploy-using-the-netlify-cli)
+  - [Running Locally](#running-locally)
+- [Forms](#forms)
+  - [Adding a Custom Submission Page](#adding-a-custom-submission-page)
+  - [Blocking Bot Spam with a Honeypot Field](#blocking-bot-spam-with-a-honeypot-field)
+  - [Forms Resources](#forms-resources)
+- [Netlify Functions](#netlify-functions)
+  - [Functions Resources](#functions-resources)
+- [Redirects](#redirects)
+  - [Redirect Resources](#redirect-resources)
+- [Next.js Toolbox Template Walkthrough](#nextjs-toolbox-template-walkthrough)
+- [Testing](#testing)
+  - [Included Default Testing](#included-default-testing)
+  - [Removing Renovate](#removing-renovate)
+  - [Removing Cypress](#removing-cypress)
+
 ## Getting Started
 
 After installing the dependencies with `npm install` or `yarn install`, run the development server:
@@ -26,7 +46,7 @@ Want to deploy immediately? Click this button
 
 Clicking this button will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify.
 
-### Deploy using the [Netlify CLI](https://cli.netlify.com/):
+### Deploy using the Netlify CLI:
 Click the 'Use the Template' button at the top of this repo or clone it with the `git clone` command. Then install the Netlify CLI tool and run `netlify init`. Or straight from the Netlify CLI, use the `netlify sites:create-template` command in you terminal ([learn more about this command here](https://www.netlify.com/blog/create-a-site-from-a-template-using-the-netlify-cli)) to do the entire flow for you.
 
 ```bash
@@ -160,6 +180,48 @@ There are many ways to use redirects. Check out the resouces below to learn more
 - [Redirect by country or language](https://docs.netlify.com/routing/redirects/redirect-options/#redirect-by-country-or-language)
 - [On-Demand Builders](https://docs.netlify.com/configure-builds/on-demand-builders/)
 
-## Next.js Toolbox Template - Walkthrough
+## Next.js Toolbox Template Video Walkthrough
 
 https://user-images.githubusercontent.com/76533034/156541634-4dd7ce20-c413-43c1-ac7d-1494dad00338.mp4
+
+## Testing
+
+### Included Default Testing
+
+We’ve included some tooling that helps us maintain these templates. This template currently uses:
+
+- [Renovate](https://www.mend.io/free-developer-tools/renovate/) - to regularly update our dependencies
+- [Cypress](https://www.cypress.io/) - to run tests against how the template runs in the browser
+- [Cypress Netlify Build Plugin](https://github.com/cypress-io/netlify-plugin-cypress) - to run our tests during our build process
+
+If your team is not interested in this tooling, you can remove them with ease!
+
+### Removing Renovate
+
+In order to keep our project up-to-date with dependencies we use a tool called [Renovate](https://github.com/marketplace/renovate). If you’re not interested in this tooling, delete the `renovate.json` file and commit that onto your main branch.
+
+### Removing Cypress
+
+For our testing, we use [Cypress](https://www.cypress.io/) for end-to-end testing. This makes sure that we can validate that our templates are rendering and displaying as we’d expect. By default, we have Cypress not generate deploy links if our tests don’t pass. If you’d like to keep Cypress and still generate the deploy links, go into your `netlify.toml` and delete the plugin configuration lines:
+
+```diff
+[[plugins]]
+  package = "netlify-plugin-cypress"
+-  [plugins.inputs.postBuild]
+-    enable = true
+-
+-  [plugins.inputs]
+-    enable = false
+```
+
+If you’d like to remove the `netlify-plugin-cypress` build plugin entirely, you’d need to delete the entire block above instead. And then make sure sure to remove the package from the dependencies using:
+
+```bash
+npm uninstall -D netlify-plugin-cypress
+```
+
+And lastly if you’d like to remove Cypress entirely, delete the entire `cypress` folder and the `cypress.config.ts` file. Then remove the dependency using:
+
+```bash
+npm uninstall cypress
+```
