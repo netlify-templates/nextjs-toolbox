@@ -18,7 +18,7 @@ This is a [Next.js](https://nextjs.org/) v12 project bootstrapped with [`create-
   - [Functions Resources](#functions-resources)
 - [Redirects](#redirects)
   - [Redirect Resources](#redirect-resources)
-- [Next.js Toolbox Template Walkthrough](#nextjs-toolbox-template-walkthrough)
+- [Next.js Toolbox Template Walkthrough](#nextjs-toolbox-template-video-walkthrough)
 - [Testing](#testing)
   - [Included Default Testing](#included-default-testing)
   - [Removing Renovate](#removing-renovate)
