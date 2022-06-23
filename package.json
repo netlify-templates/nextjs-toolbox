@@ -24,7 +24,7 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "@netlify/plugin-nextjs": "^4.3.2",
+    "@netlify/plugin-nextjs": "^4.9.1",
     "netlify-plugin-cypress": "2.2.0"
   }
 }
