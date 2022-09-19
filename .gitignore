@@ -1,33 +1,16 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+<Html> 
+<Body> 
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+<video width="400" controls>
+  <source src="mov_bbb.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
 
-# testing
-/coverage
+<p>
+Video courtesy of 
+<a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
+</p>
 
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# local env files
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Local Netlify folder
-.netlify
+</Body> 
+</Html>
