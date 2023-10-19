@@ -7,9 +7,11 @@ This is a [Next.js](https://nextjs.org/) v12 project bootstrapped with [`create-
 ## Table of Contents:
 
 - [Getting Started](#getting-started)
+  - [Quick Setup + Deploy Option](#quick-setup--deploy-option)
+  - [Cloning + Install Packages](#cloning--install-packages)
+  - [Running Locally](#running-locally)
 - [Deploy to Netlify](#deploy-to-netlify)
   - [Deploy using the Netlify CLI](#deploy-using-the-netlify-cli)
-  - [Running Locally](#running-locally)
 - [Forms](#forms)
   - [Adding a Custom Submission Page](#adding-a-custom-submission-page)
   - [Blocking Bot Spam with a Honeypot Field](#blocking-bot-spam-with-a-honeypot-field)
@@ -24,62 +26,69 @@ This is a [Next.js](https://nextjs.org/) v12 project bootstrapped with [`create-
   - [Removing Renovate](#removing-renovate)
   - [Removing Cypress](#removing-cypress)
 
-## Getting Started
+## Getting Started 
+  This template requires you to have the Netlify CLI installed:
 
-After installing the dependencies with `npm install` or `yarn install`, run the development server:
+  ```bash
+  npm install netlify-cli -g # to install the Netlify CLI tool globally
+  ```
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Quick Setup + Deploy Option
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-## Deploy to Netlify
-
-Want to deploy immediately? Click this button
+Click this button and it will help you create a new repo, create a new Netlify project, and deploy! Once you have your new template deployed and ready you can continue on to cloning the repo locally and Installing the dependencies. 
 
 [![Deploy to Netlify Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/nextjs-toolbox)
 
-Clicking this button will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify.
+### Cloning + Install Packages
 
-### Deploy using the Netlify CLI:
-Click the 'Use the Template' button at the top of this repo or clone it with the `git clone` command. Then install the Netlify CLI tool and run `netlify init`. Or straight from the Netlify CLI, use the `netlify sites:create-template` command in you terminal ([learn more about this command here](https://www.netlify.com/blog/create-a-site-from-a-template-using-the-netlify-cli)) to do the entire flow for you.
+  1. Clone this repo with one of these options:
 
-```bash
-git clone https://github.com/netlify-templates/nextjs-toolbox 
+      - Click the 'Use this template' button at the top of the page
+      - Via the command line 
+        ```bash
+        git clone https://github.com/netlify-templates/nextjs-toolbox 
+        ```
+      - Or straight from the Netlify CLI, use the `netlify sites:create-template` command in you terminal ([learn more about this command here](https://www.netlify.com/blog/create-a-site-from-a-template-using-the-netlify-cli)) to do the entire flow for you.
 
-npm install netlify-cli -g # to install the Netlify CLI tool globally
+  2. Install the dependencies for this templates:
 
-netlify init # initialize a new Netlify project & deploy
-```
-
-It will use the information from the included Netlify configuration file, [`netlify.toml`](./netlify.toml), to set up the build command as `npm run generate` to create a static project and locate the build project in the `dist` directory.
-
-The `init` process will also set up continuous deployemnt for your project so that a new build will be triggered & deployed when you push code to the repo (you can change this from your project dashboard: Site Settings/Build & deploy/Continuous Deployment).
-
-You can also use `netlify deploy (--prod)` to manually deploy and `netlify open` to open your project dashboard.
-
-> 💡 we only have so many keystrokes to give, use `ntl` shorthand for `netlify` or make [an alias of your own](https://www.netlify.com/blog/2020/04/12/speed-up-productivity-with-terminal-aliases/) to save hours...of accumulated miliseconds
+      ```bash
+      npm install
+      # or
+      yarn install
+      ```
 
 ### Running Locally
 
-You can use `netlify dev` from the command line to access project information like environment variables as well as
+  Once the Netify CLI is installed you can run the template locally with:
 
-- test functions
-- test redirects
-- share a live session via url with `netlify dev --live`
-- [and more](https://cli.netlify.com/netlify-dev/) :)
+  ```bash 
+  netlify dev or ntl dev
+  ```
+  > 💡 we only have so many keystrokes to give, use `ntl` shorthand for `netlify` or make [an alias of your own](https://www.netlify.com/blog/2020/04/12/speed-up-productivity-with-terminal-aliases/) to save hours...of accumulated miliseconds
 
-### Deployment Resources
+  You can use `netlify dev` from the command line to access project information like environment variables as well as
 
-- [CLI docs](https://docs.netlify.com/cli/get-started/)
-- [File-based Netlify Configuration](https://docs.netlify.com/configure-builds/file-based-configuration/)
-- [Netlify Dev Overview](https://www.youtube.com/watch?v=RL_gtVZ_79Q&t=812s)
-- [Netlify Edge, CDN deployment](https://www.netlify.com/products/edge/)
+    - test functions
+    - test redirects
+    - share a live session via url with `netlify dev --live`
+    - [and more](https://cli.netlify.com/netlify-dev/) :)
+
+## Deploy to Netlify
+
+
+### Deploy using the Netlify CLI:
+
+Initialize your new template to set up continuous deployemnt for your project so that a new build will be triggered & deployed when you push code to the repo (you can change this from your project dashboard: Site Settings/Build & deploy/Continuous Deployment).
+  ```bash
+  netlify init # initialize a new Netlify project & deploy
+  ```
+
+
+It will use the information from the included Netlify configuration file, [`netlify.toml`](./netlify.toml), to set up the build command as `npm run generate` to create a static project and locate the build project in the `dist` directory.
+
+You can also use `netlify deploy (--prod)` to manually deploy and `netlify open` to open your project dashboard.
+
 
 ## Forms
 
