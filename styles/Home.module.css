@@ -1,0 +1,55 @@
+/* styles/Home.module.css */
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.logo img {
+  max-width: 100px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li {
+  margin-right: 20px;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.button {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
